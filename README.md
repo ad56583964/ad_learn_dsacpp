@@ -1,5 +1,5 @@
-Ê¹ÓÃ c++ ¸ú×ÅµËÀÏÊ¦µÄÊéÊÖ´òÒ»±éÊı¾İ½á¹¹µÄ¸÷¸öÄÚÈİ
-µË¿¡»Ô dsacpp
+ä½¿ç”¨ c++ è·Ÿç€é‚“è€å¸ˆçš„ä¹¦æ‰‹æ‰“ä¸€éæ•°æ®ç»“æ„çš„å„ä¸ªå†…å®¹
+é‚“ä¿Šè¾‰ dsacpp
 https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/index.htm
 
 my DSACPP Notes
