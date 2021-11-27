@@ -35,7 +35,7 @@ int main()
     nullptr_t my_nullptr = nullptr; //通过nullptr_t定义新的实例(vc下必须初始化，但g++默认下己初始化为nullptr)
 
     (nullptr == my_nullptr) ? (cout << "newptr == nullptr" << endl) : (cout << "newptr != nullptr" << endl);
-    (nullptr < my_nullptr) ? (cout << "newptr < nullptr" << endl) : (cout << "newptr !< nullptr" << endl);
+    //(nullptr < my_nullptr) ? (cout << "newptr < nullptr" << endl) : (cout << "newptr !< nullptr" << endl);
 
     //3.2 nullptr不支持算术运算
     //nullptr += 1; //nullptr是个常量

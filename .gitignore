@@ -1,2 +1,4 @@
+# 忽略的文件夹
 cxxtest/build/
 build/
+
