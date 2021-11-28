@@ -11,7 +11,7 @@ public:
     // T* _elem; //是一个指针，空的？？？
     T* _elem = nullptr;
 
-    void copyFrom ( T const* A, Rank lo, Rank hi ) { //以数组匙间A[lo, hi)为蓝本复刢向量
+    void copyFrom ( T const* A, Rank lo, Rank hi ) { //以数组之间A[lo, hi)为蓝本复制向量
         _elem = new T[ _capacity = 2 * ( hi - lo ) ];  //new??
         _size = 0;
         while( lo < hi){
@@ -28,9 +28,14 @@ public:
         for ( _size = 0; _size < s; _elem[_size++] = v ); 
     }
 
-    // Vector ();
+    //赋值操作符重载
+    Vector<T> & operator= ( Vector<T> const& V) { //重载
+    if ( _elem ) delete [] _elem; //释放原有内容
+        copyFrom ( V._elem, 0, V.size() ); //整体复制
+    return *this;
+}
 
-    
+    // ~Vector ()
 
 };
 
