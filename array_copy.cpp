@@ -74,6 +74,15 @@ public:
         return 0;
     }
 
+    Rank remove(Rank r)
+    {
+        for(int i = _size; i > r; i--)
+        {
+            _elem[i-1] = _elem[i];
+        }
+        return 0;
+    }
+
     void unsort (Rank lo, Rank hi){
         T* V = _elem + lo; //一个指针??
         std::cout << V << std::endl; 
@@ -90,6 +99,7 @@ public:
         {
             printf("%d ",_elem[i]);
         }
+        _size -= 1;
     }
 
 };
@@ -109,5 +119,7 @@ int main()
     // vector_A.expand();
 
     // printf("%d\n",vector_A[2]);
+    vector_A.showAll();
+    vector_A.remove(2);
     vector_A.showAll();
 }
