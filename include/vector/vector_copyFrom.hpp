@@ -1,14 +1,4 @@
-﻿
-#include "myarray.hpp"
-#include <iostream>
-
-using Rank = int; //秩??
-
-// #define DEBUG
-
-#define DEFAULT_CAPACITY 3
-
-// #define DEBUG 1;
+﻿#pragma once
 
 template <typename T> 
 void Vector<T>::copyFrom ( T const* A, Rank lo, Rank hi ) {
@@ -18,7 +8,7 @@ void Vector<T>::copyFrom ( T const* A, Rank lo, Rank hi ) {
         _elem[_size++] = A[lo++]; //复制至_elem[0, hi - lo)
     }
 }
-
+/* 
 template <typename T> 
 Vector<T>::Vector ( int c, int s, T v){
     _elem = new T[_capacity = c];
@@ -111,4 +101,4 @@ void Vector<T>::showAll()
     }
     printf("\n");
     _size -= 1;
-}
+} */

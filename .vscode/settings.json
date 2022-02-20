@@ -1,5 +1,15 @@
 {
     "files.associations": {
-        "array": "cpp"
+        "array": "cpp",
+        "iostream": "cpp",
+        "atomic": "cpp",
+        "cctype": "cpp",
+        "cstdio": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xtr1common": "cpp",
+        "xutility": "cpp"
     }
 }

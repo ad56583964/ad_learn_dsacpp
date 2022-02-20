@@ -22,10 +22,6 @@ public:
         }
     }
 
-    Vector ( int c = DEFAULT_CAPACITY, int s = 0, T v = 0 ){
-        _elem = new T[_capacity = c]; //https://cplusplus.com/doc/tutorial/dynamic/
-        for ( _size = 0; _size < s; _elem[_size++] = v ); 
-    }
 
     Vector<T> & operator= ( Vector<T> const& V) { //重载
         if ( _elem ) delete [] _elem; //释放原有内容

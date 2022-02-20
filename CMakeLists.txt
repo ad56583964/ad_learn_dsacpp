@@ -1,17 +1,15 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.5.0)
 project(dsacpp VERSION 0.1.0)
+
+set( CMAKE_CXX_STANDARD 11 )
 
 include(CTest)
 enable_testing()
 
-set(SOURCES src/array_copy.cpp src/test.cpp)
 
-add_executable(myarray ${SOURCES})
+add_executable(myarray src/test.cpp)
 
-target_include_directories(myarray
-    PRIVATE 
-        ${PROJECT_SOURCE_DIR}/include
-)
+target_include_directories(myarray PRIVATE include/vector)
 
 #牛哇
 # add_executable(cxxtest cxxtest/constconst.cpp)
