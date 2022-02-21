@@ -10,6 +10,27 @@
         "xmemory": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "exception": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "vector": "cpp",
+        "xiosbase": "cpp",
+        "algorithm": "cpp",
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "limits": "cpp",
+        "system_error": "cpp",
+        "typeinfo": "cpp",
+        "xlocale": "cpp",
+        "xlocinfo": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp"
     }
 }

@@ -31,6 +31,9 @@ public:
 
     T& remove(Rank r) const;
 
+    Rank size(){
+        return _size;
+    }
 
     //vector_debug
     void showElems();
