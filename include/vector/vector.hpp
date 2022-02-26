@@ -24,15 +24,13 @@ public:
     T& operator[] (Rank r) const;
 
     void expand();
+        Rank insert(Rank r, T const &e); // 插入位置，插入元素
 
-    Rank insert(Rank r, T const &e); // 插入位置，插入元素
+        T& remove(Rank r) const;
+        int remove(Rank lo, Rank hi);
 
     void unsort (Rank lo, Rank hi);
     void unsort ();
-
-    T& remove(Rank r) const;
-    
-    int Vector<T>::remove(Rank lo, Rank hi);
 
     Rank size(){
         return _size;

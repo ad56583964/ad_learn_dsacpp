@@ -8,11 +8,9 @@ int main(int argc, char const *argv[])
     for(int i=0;i<10;i++){
         myvector.insert(i,i);
     }
-    
     //insert 的位置？？
     myvector.showElems();
-    myvector.unsort();
+    myvector.remove(5,7);
     myvector.showElems();
-
     return 0;
 }
