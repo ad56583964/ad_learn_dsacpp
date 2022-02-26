@@ -16,3 +16,13 @@ T& Vector<T>::remove(Rank r) const{
     }
     return elem_ch;
 }
+
+// template <typename T>
+// Rank Vector<T>::remove(Rank lo, Rank hi){
+//     Rank re_size = hi - lo;
+//     for(Rank i = lo ; i < hi ; i++){
+//         _elem[i] = _elem[i+(re_size+1)];
+//     }
+//     _size = _size - (re_size+1);
+//     return re_size;
+// }

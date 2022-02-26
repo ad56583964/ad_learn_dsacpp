@@ -1,4 +1,6 @@
-﻿#include "vector.hpp"
+﻿#include <vector.hpp>
+// #include <Windows.h>
+// #include <random>
 
 int main(int argc, char const *argv[])
 {
@@ -9,7 +11,8 @@ int main(int argc, char const *argv[])
     
     //insert 的位置？？
     myvector.showElems();
-    permute(myvector);
+    myvector.unsort();
     myvector.showElems();
+
     return 0;
 }

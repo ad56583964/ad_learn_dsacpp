@@ -28,8 +28,11 @@ public:
     Rank insert(Rank r, T const &e); // 插入位置，插入元素
 
     void unsort (Rank lo, Rank hi);
+    void unsort ();
 
     T& remove(Rank r) const;
+    
+    int Vector<T>::remove(Rank lo, Rank hi);
 
     Rank size(){
         return _size;
@@ -39,4 +42,4 @@ public:
     void showElems();
 };
 
-#include <vector_interface.hpp>
+#include <interface_vector.hpp>
