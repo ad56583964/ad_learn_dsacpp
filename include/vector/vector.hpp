@@ -20,13 +20,15 @@ public:
     }
 
     Vector<T>& operator= ( Vector<T> const& V);
+
+    int find(T const& e, Rank lo, Rank hi);
     
     T& operator[] (Rank r) const;
 
     void expand();
         Rank insert(Rank r, T const &e); // 插入位置，插入元素
 
-        T& remove(Rank r) const;
+        T& remove(Rank r);
         int remove(Rank lo, Rank hi);
 
     void unsort (Rank lo, Rank hi);
@@ -36,8 +38,12 @@ public:
         return _size;
     }
 
+    int deduplicate();
+
     //vector_debug
     void showElems();
+
+    
 };
 
 #include <interface_vector.hpp>

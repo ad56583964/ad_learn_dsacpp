@@ -6,11 +6,11 @@ int main(int argc, char const *argv[])
 {
     Vector<int> myvector;
     for(int i=0;i<10;i++){
-        myvector.insert(i,i);
+        myvector.insert(i,1);
     }
     //insert 的位置？？
     myvector.showElems();
-    myvector.remove(5,7);
+    myvector.deduplicate();
     myvector.showElems();
     return 0;
 }

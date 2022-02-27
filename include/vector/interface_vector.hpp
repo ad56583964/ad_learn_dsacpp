@@ -8,3 +8,5 @@
 #include <vector_operator.hpp>
 #include <vector_test.hpp>
 #include <vector_unsort.hpp>
+#include <vector_deduplicate.hpp>
+#include <vector_find.hpp>

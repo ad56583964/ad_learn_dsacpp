@@ -7,7 +7,7 @@
 //so??
 //return T type
 template <typename T> //simple delete
-T& Vector<T>::remove(Rank r) const{
+T& Vector<T>::remove(Rank r){
     //should check sth??
     T elem_ch = _elem[r];
     for (Rank i = r; i < _size-1; i++){

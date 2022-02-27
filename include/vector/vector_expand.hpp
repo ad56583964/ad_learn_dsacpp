@@ -14,8 +14,7 @@ void Vector<T>::expand()
     T* oldElem = _elem; //给予地址，指向原_elem
     _elem = new T[_capacity <<= 1]; //干了两件事/ 两倍扩容 / 容值更新
 
-    for(int i = 0; i < _size; i++)
-    {
+    for(int i = 0; i < _size; i++){
         _elem[i] = oldElem[i]; //??有点耗时额？？
     }
     fprintf(stderr,"NewCap: %d\n",_capacity);
